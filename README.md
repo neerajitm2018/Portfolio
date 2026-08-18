@@ -1,49 +1,33 @@
-# Neeraj Vishwakarma — Portfolio Site
+# Neeraj Vishwakarma — Portfolio Website
 
-A static, single-page portfolio built from your resume. No build step, no
-dependencies to install — just HTML, CSS, and vanilla JS.
+A simple, easy-to-read personal website. Just 3 files — no installation
+needed.
 
 ```
-index.html   → page content
-style.css    → design system (dashboard/observability-inspired theme)
-script.js    → terminal boot animation, stat counters, mobile nav
+index.html   → the page content (edit text here)
+style.css    → colors, fonts, spacing
+script.js    → the mobile menu button
 ```
 
-## 1. Preview it locally
-Just double-click `index.html`, or serve it:
-```bash
-cd portfolio
-python3 -m http.server 8000
-# open http://localhost:8000
-```
+## See it on your computer
+Just double-click `index.html` — it opens in your browser.
 
-## 2. Put it on GitHub
-```bash
-cd portfolio
-git init
-git add .
-git commit -m "Initial portfolio site"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
+## Put it on GitHub (step by step)
 
-## 3. Turn on GitHub Pages
-1. On GitHub, open your repo → **Settings** → **Pages**.
-2. Under "Build and deployment", set **Source** to `Deploy from a branch`.
-3. Branch: `main`, folder: `/ (root)` → **Save**.
-4. Your site goes live at `https://<your-username>.github.io/<repo-name>/`
-   (can take a minute or two the first time).
+1. Create a new repository on GitHub (e.g. `portfolio`).
+2. Upload these 3 files (`index.html`, `style.css`, `script.js`) — on
+   GitHub, click **Add file → Upload files**, drag them in, then
+   **Commit changes**.
+3. Go to your repository's **Settings** tab → **Pages** (left sidebar).
+4. Under "Build and deployment", set **Source** to `Deploy from a branch`.
+5. Choose branch `main`, folder `/ (root)`, then click **Save**.
+6. Wait a minute, then visit `https://<your-username>.github.io/<repo-name>/`
+   — your site is live!
 
-If you'd rather the site live at `https://<your-username>.github.io`
-directly (no `/repo-name/` in the URL), name the repo
-`<your-username>.github.io` instead.
+Tip: if you name the repository `<your-username>.github.io`, your site
+will live at `https://<your-username>.github.io` with no extra path.
 
-## Customizing
+## Making changes
 
-- **Contact info**: phone numbers are intentionally left off the public
-  page (this repo is public by default). To add them back, edit the
-  `#contact` section in `index.html`.
-- **Colors / fonts**: all in the `:root` block at the top of `style.css`.
-- **Copy**: every section is plain HTML in `index.html` — no templating,
-  so it's safe to hand-edit directly.
+Everything is plain, readable HTML — open `index.html` in any text
+editor and change the words directly. No special tools required.
